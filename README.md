@@ -1,11 +1,3 @@
-# Pepper-the-digital-receptionist
+Pepper was the first serious app that we worked on, and this was the very first iteration of it that our users didn't like. We tried to build a web app that would actually rely on another free service to route your calls, and put together an MVP. The final version of pepper that was more widely used can be found in the other repo (https://github.com/buzzwordlabs/pepper-mobile). We only shipped this version to a few friends that helped us realize this wasn't good enough for launching more widely.
 
-Pepper is a digital receptionist that will finally put an end to pesky telemarketing calls.
-
-## Dev Setup
-
-1. Setup `env.sh` file. Get the envs from devs.
-2. Ensure you have `ngrok` executable set, or you may install it to the system if you can as any other application. Run `yarn ngrok`. Install `ngrok` [here](https://ngrok.com/) if necessary.
-3. Use ngrok http URL (append /call/api/index at the end) as webhook URL on Twilio dashboard for your number.
-4. In a separate terminal window, run `yarn dev`.
-5. You're good to go!
+We also ended up moving our codebase to TypeScript and PostgreSQL in our final project (from MongoDB and JavaScript), as you can see here.
