@@ -1,0 +1,25 @@
+.stripeInput {
+  width: 100%;
+  height: 2.5rem;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+.shadow {
+  box-shadow: 0 0.125em 0.313em rgba(50, 50, 93, 0.09),
+    0 0.063em 0.125em rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s ease;
+}
+
+/* .shadow:hover {
+  box-shadow: 0 0.938em 2.188em rgba(50, 50, 93, 0.1), 0 0.313em 0.938em rgba(0, 0, 0, 0.07);
+} */
+
+.form {
+  max-width: 25rem;
+  margin: 0 auto;
+  padding: 0 6px;
+}

@@ -1,0 +1,76 @@
+{
+  "name": "digital-receptionist",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/enaluz/digital-receptionist.git",
+  "author": "Ethan Naluz <26469879+enaluz@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "cd client/ && yarn && yarn build && cd ../server && yarn",
+    "ngrok": "./ngrok http 8080",
+    "dev": "source ./env.sh && concurrently --kill-others-on-fail \"nodemon server/server.js\" \"cd client && yarn start\"",
+    "setup": "yarn && cd client && yarn && cd ../server && yarn",
+    "release": "standard-version"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@typescript-eslint/eslint-plugin": "1.x",
+    "@typescript-eslint/parser": "1.x",
+    "babel-eslint": "10.0.2",
+    "commitizen": "^4.0.3",
+    "concurrently": "^4.1.0",
+    "cz-conventional-changelog": "3.0.2",
+    "eslint": "6.x",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react-app": "^5.0.1",
+    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.x",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "nodemon": "^1.18.11",
+    "prettier": "^1.17.0",
+    "pretty-quick": "^1.10.0",
+    "standard-version": "^7.0.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-prettier": "^5.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-prettier": "^1.0.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*": [
+      "pretty-quick --staged",
+      "git add"
+    ],
+    "*.{js, jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.css": [
+      "stylelint --aei --fix",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

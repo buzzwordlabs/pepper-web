@@ -1,0 +1,36 @@
+.navLink {
+  color: #182538 !important;
+  font-weight: 400 !important;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+}
+
+.navLink:hover {
+  text-decoration: none !important;
+  background-color: #64626210;
+  border-radius: 2px;
+}
+
+.navLinkActive {
+  color: #4192f2 !important;
+}
+
+.navLinkContainer {
+  margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .navDropdown {
+    align-self: center;
+  }
+}
+
+.navDropdownToggle {
+  color: #182538 !important;
+  cursor: pointer;
+}
+
+.navbarOverride {
+  background-color: #f6f9fc;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+}

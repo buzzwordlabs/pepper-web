@@ -1,0 +1,47 @@
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+html {
+  background-color: #f6f9fc;
+}
+
+body > * {
+  background-color: #f6f9fc;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+/* Overwrite default bootstrap .btn  */
+.btn {
+  /* font-size: 1rem !important; */
+
+  /* font-weight: 300; */
+  padding-left: 1.75rem !important;
+  padding-right: 1.75rem !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo {
+  width: 200px;
+}
+
+input[type='text'],
+input[type='password'],
+textarea,
+select {
+  outline: none;
+}
+
+.g-primary-color {
+  color: #4192f2;
+}

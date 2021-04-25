@@ -1,0 +1,13 @@
+.cardOverride {
+  background-color: #f6f9fc !important;
+  border: none !important;
+  margin-top: '3rem';
+  margin-bottom: '6rem';
+}
+
+.imgOverride {
+  width: 80% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta property="og:title" content="Pepper- your digital receptionist" />
+    <meta property="og:url" content="https://callpepper.co" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Pepper prevents robocallers from ever reaching your phone."
+    />
+    <meta property="og:image" content="https://i.imgur.com/YnR40ge.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Pepper</title>
+    <!-- IBM Plex Sans Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,700"
+      rel="stylesheet"
+    />
+    <!-- Mailchimp Signup Form CSS -->
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- Start of Async Drift Code -->
+    <script>
+      'use strict';
+
+      !(function() {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error('Drift snippet included twice.')
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              'identify',
+              'config',
+              'track',
+              'reset',
+              'debug',
+              'show',
+              'ping',
+              'page',
+              'hide',
+              'off',
+              'on'
+            ]),
+            (t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function(t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement('script');
+              (o.type = 'text/javascript'),
+                (o.async = !0),
+                (o.crossorigin = 'anonymous'),
+                (o.src =
+                  'https://js.driftt.com/include/' + n + '/' + t + '.js');
+              var i = document.getElementsByTagName('script')[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('z7zpampyyh4r');
+    </script>
+    <!-- End of Async Drift Code -->
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

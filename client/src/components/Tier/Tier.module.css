@@ -1,0 +1,17 @@
+.container {
+  padding: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 3px;
+  border: 1px solid #ececec;
+  box-shadow: 0 0.125em 0.313em rgba(50, 50, 93, 0.09),
+    0 0.063em 0.125em rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.938em 2.188em rgba(50, 50, 93, 0.1),
+    0 0.313em 0.938em rgba(0, 0, 0, 0.07);
+}

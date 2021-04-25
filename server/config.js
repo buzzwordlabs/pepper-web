@@ -1,0 +1,6 @@
+const { REACT_APP_GOOGLE_ANALYTICS_ID, MIXPANEL_TOKEN } = process.env;
+
+module.exports = {
+  REACT_APP_GOOGLE_ANALYTICS_ID,
+  MIXPANEL_TOKEN
+};
