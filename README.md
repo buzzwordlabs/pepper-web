@@ -4,5 +4,5 @@ We also ended up moving our codebase to TypeScript and PostgreSQL in our final p
 
 Project is composed of:
 
-client/ - contains a Create React App app
-server/ - contains a node.js server with MongoDB
+1. client/ - contains a Create React App app
+2. server/ - contains a node.js server with MongoDB
